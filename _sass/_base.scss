@@ -1,16 +1,4 @@
 /**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/**
  * Basic styling
  */
 body {
@@ -23,8 +11,6 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -35,8 +21,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -44,21 +28,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
 
 /**
  * Lists
@@ -74,16 +43,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-
-
 
 /**
  * Links
@@ -102,8 +67,6 @@ a {
     }
 }
 
-
-
 /**
  * Blockquotes
  */
@@ -119,8 +82,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Code formatting
@@ -148,8 +109,6 @@ pre {
     }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -160,7 +119,6 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    @extend %clearfix;
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -169,22 +127,6 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
 
 /**
  * Icons
